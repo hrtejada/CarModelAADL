@@ -1,0 +1,39 @@
+package CarSystem
+public
+with SEI;
+with UIComponenet;
+with SoftwareSystems;
+with BrakeHardware;
+with ElectricalComponents;
+	system Car
+		properties
+			SEI::WeightLimit => 5.0kg;
+	end Car;
+	
+	system implementation Car.impl
+		subcomponents
+			ui: device UIComponenet::UI_Input;
+			ud: device UIComponenet::UI_Display;
+			cc: system SoftwareSystems::cruiseControl;
+			
+			wheel_sensor: device BrakeHardware::Wheel_Rotation_Sensor;
+			brake_pedal: device BrakeHardware::Brake_Pedal;
+			albs: system SoftwareSystems::antiLockSystem;
+			
+			actuator: device ElectricalComponents::Actuator;
+			
+	connections
+			cc1: port ui.ui -> cc.ui_in;
+			cc2: port cc.ud_out -> ud.ud;
+			
+			cc3: port wheel_sensor.wheel_sensor -> albs.albs_in;
+			cc4: port albs.albs_out -> brake_pedal.brake_pedal;
+			
+			cc5: port wheel_sensor.wheel_sensor -> cc.wrs_in;
+			cc6: port brake_pedal.brake_pedal_out -> cc.bp_in;
+			cc7: port cc.ta_out -> actuator.act_in;
+			
+		flows
+			  ete: end to end flow ui.ui_flowsource -> cc1 -> cc.flow_UI_UD -> cc2 -> ud.ud_flowsink  {Latency => 12ms..13ms;};                                                                                      
+	end Car.impl;
+end CarSystem;

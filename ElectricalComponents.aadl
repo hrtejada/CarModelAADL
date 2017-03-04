@@ -1,0 +1,14 @@
+package ElectricalComponents
+public
+	with SEI;
+	device Actuator
+		features
+			act_in: in data port;
+		flows
+			brake_flowsource: flow sink act_in{ 
+				Latency => 10ms..10ms;
+			};
+		properties
+			SEI::NetWeight => 2.0 kg;
+	end Actuator;
+end ElectricalComponents;
