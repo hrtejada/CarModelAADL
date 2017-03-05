@@ -5,8 +5,8 @@ public
 		features
 			act_in: in data port;
 		flows
-			brake_flowsource: flow sink act_in{ 
-				Latency => 10ms..10ms;
+			act_flowsink: flow sink act_in{ 
+				Latency => 15ms..15ms;
 			};
 		properties
 			SEI::NetWeight => 2.0 kg;

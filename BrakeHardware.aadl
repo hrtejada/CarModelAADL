@@ -5,7 +5,7 @@ public
 		features
 			wheel_sensor: out data port;
 		flows
-			brake_flowsource: flow source wheel_sensor{ 
+			wheel_flowsource: flow source wheel_sensor{ 
 				Latency => 10ms..10ms;
 			};
 		properties
@@ -17,7 +17,7 @@ public
 			brake_pedal: in data port;
 			brake_pedal_out: out data port;
 		flows
-			brake_flowsource: flow sink brake_pedal{ 
+			brake_flowsource: flow source brake_pedal_out{ 
 				Latency => 7ms..7ms;
 			};
 		properties

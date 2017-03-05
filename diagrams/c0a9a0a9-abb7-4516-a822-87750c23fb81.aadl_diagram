@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="AADL Diagram" name="CarSystem::Car.impl" snapToGrid="true" version="0.12.0">
   <properties key="independentObject" value="classifier CarSystem::Car.impl"/>
+  <properties key="selected_flow" value="WRS_PATH_ACT"/>
   <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
     <properties key="independentObject" value="classifier CarSystem::Car.impl"/>
@@ -11,37 +12,37 @@
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc1_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="263" y="336"/>
+      <location x="271" y="417"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc2_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="636" y="391"/>
+      <location x="636" y="412"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc3_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="636" y="145"/>
+      <location x="636" y="157"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc4_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="280" y="118"/>
+      <location x="266" y="132"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc5_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="636" y="243"/>
+      <location x="636" y="263"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc6_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="280" y="250"/>
+      <location x="266" y="231"/>
     </anchors>
     <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
       <properties key="name" value="connection CarSystem::Car.impl.cc7_midpoint"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-      <location x="256" y="426"/>
+      <location x="257" y="353"/>
     </anchors>
     <anchors xsi:type="pi:ChopboxAnchor">
       <properties key="name" value="chopbox"/>
@@ -51,7 +52,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="221" height="70" x="5" y="290" style="//@styles.0/@styles.1">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="221" height="70" x="21" y="411" style="//@styles.0/@styles.1">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
           <points x="221"/>
           <points x="221" y="70"/>
@@ -97,7 +98,7 @@
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.4" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.7" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="17" y="26"/>
@@ -107,7 +108,7 @@
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="32" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.4" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.7" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="-33" y="26"/>
@@ -217,7 +218,7 @@
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.5" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.8" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="15" y="26"/>
@@ -227,7 +228,7 @@
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.5" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.8" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="65" y="26"/>
@@ -291,7 +292,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="321" height="133" x="300" y="279" style="//@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="321" height="133" x="300" y="250" style="//@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
       <anchors xsi:type="pi:ChopboxAnchor">
         <properties key="name" value="chopbox"/>
       </anchors>
@@ -303,11 +304,11 @@
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="51" height="31" y="20"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="51" height="31" y="91"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.9" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.12" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="15" y="26"/>
@@ -365,11 +366,11 @@
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
         <properties key="layout_side" value="right"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="63" height="31" x="258" y="20"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="63" height="31" x="258" y="91"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.9" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.12" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="48" y="26"/>
@@ -421,22 +422,22 @@
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature SoftwareSystems::cruiseControl.ta_out"/>
+        <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="left"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="is_layed_out" value="true"/>
-        <properties key="side" value="left"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="58" height="31" y="39"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="58" height="31" y="61"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.13 //@connections.14" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="15" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.12" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.6" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location y="26"/>
@@ -483,22 +484,22 @@
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature SoftwareSystems::cruiseControl.wrs_in"/>
+        <properties key="is_layed_out" value="true"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="is_layed_out" value="true"/>
         <properties key="side" value="right"/>
         <properties key="layout_side" value="right"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="61" height="31" x="260"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="61" height="31" x="260" y="61"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.14" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="46" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.10" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.4" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="61" y="26"/>
@@ -545,22 +546,22 @@
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature SoftwareSystems::cruiseControl.bp_in"/>
+        <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="left"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="is_layed_out" value="true"/>
-        <properties key="side" value="left"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="55" height="31"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="55" height="31" y="10"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.13" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="15" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.11" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.5" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location y="26"/>
@@ -629,7 +630,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="226" height="102" x="33" y="100" style="//@styles.0/@styles.1">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="226" height="102" x="5" y="80" style="//@styles.0/@styles.1">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
           <points x="226"/>
           <points x="226" y="102"/>
@@ -666,16 +667,16 @@
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature BrakeHardware::Brake_Pedal.brake_pedal"/>
         <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="right"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="side" value="right"/>
         <properties key="layout_side" value="right"/>
         <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="95" height="31" x="131" y="10"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.7" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="80" y="26"/>
@@ -685,7 +686,7 @@
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="95" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.7" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="30" y="26"/>
@@ -727,27 +728,27 @@
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature BrakeHardware::Brake_Pedal.brake_pedal_out"/>
+        <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="right"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="is_layed_out" value="true"/>
-        <properties key="side" value="right"/>
         <properties key="layout_side" value="right"/>
         <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="122" height="31" x="104" y="69"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.10" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="107" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.11" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.5" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="122" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.10" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="57" y="26"/>
@@ -816,37 +817,37 @@
         <properties key="name" value="chopbox"/>
       </anchors>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
-        <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_in"/>
+        <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.wrs_in"/>
         <properties key="is_layed_out" value="true"/>
         <properties key="side" value="right"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
         <properties key="layout_side" value="right"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="65" height="31" x="256" y="43"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="61" height="31" x="260" y="60"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
         <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-          <location x="50" y="26"/>
+          <location x="46" y="26"/>
         </anchors>
         <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.2" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-          <location x="65" y="26"/>
+          <location x="61" y="26"/>
         </anchors>
         <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
-          <location y="26"/>
+          <location x="-4" y="26"/>
         </anchors>
         <children xsi:type="pi:ContainerShape" visible="true" active="true">
           <properties key="name" value="feature"/>
           <properties key="is_inner_shape" value="true"/>
           <properties key="is_coloring_child" value="true"/>
-          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" x="50" y="21" style="//@styles.2">
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" x="46" y="21" style="//@styles.2">
             <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="15" height="10" style="//@styles.2">
               <points x="15"/>
               <points y="5"/>
@@ -861,31 +862,31 @@
           <properties key="name" value="label"/>
           <properties key="is_manually_positioned" value="true"/>
           <properties key="is_transient" value="true"/>
-          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_in"/>
-          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="60" height="21" style="//@styles.3">
-            <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="60" height="21" style="//@styles.4" horizontalAlignment="ALIGNMENT_RIGHT" verticalAlignment="UNSPECIFIED" value="albs_in"/>
+          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.wrs_in"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="56" height="21" style="//@styles.3">
+            <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="56" height="21" style="//@styles.4" horizontalAlignment="ALIGNMENT_RIGHT" verticalAlignment="UNSPECIFIED" value="wrs_in"/>
           </graphicsAlgorithm>
         </children>
         <children visible="true" active="true">
           <properties key="name" value="annotation"/>
           <properties key="is_manually_positioned" value="true"/>
           <properties key="is_transient" value="true"/>
-          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_in"/>
+          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.wrs_in"/>
           <properties key="is_unselectable" value="true"/>
-          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="60" y="31" style="//@styles.3">
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="56" y="31" style="//@styles.3">
             <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="15" height="21" style="//@styles.4" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
           </graphicsAlgorithm>
         </children>
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
-        <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_out"/>
+        <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.bp_out"/>
         <properties key="is_layed_out" value="true"/>
         <properties key="side" value="left"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="73" height="31" y="33"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="63" height="31" y="81"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
@@ -923,16 +924,16 @@
           <properties key="name" value="label"/>
           <properties key="is_manually_positioned" value="true"/>
           <properties key="is_transient" value="true"/>
-          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_out"/>
-          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="68" height="21" x="5" style="//@styles.3">
-            <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="68" height="21" style="//@styles.4" verticalAlignment="UNSPECIFIED" value="albs_out"/>
+          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.bp_out"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="58" height="21" x="5" style="//@styles.3">
+            <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="58" height="21" style="//@styles.4" verticalAlignment="UNSPECIFIED" value="bp_out"/>
           </graphicsAlgorithm>
         </children>
         <children visible="true" active="true">
           <properties key="name" value="annotation"/>
           <properties key="is_manually_positioned" value="true"/>
           <properties key="is_transient" value="true"/>
-          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.albs_out"/>
+          <properties key="independentObject" value="feature SoftwareSystems::antiLockSystem.bp_out"/>
           <properties key="is_unselectable" value="true"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" y="31" style="//@styles.3">
             <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="15" height="21" style="//@styles.4" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
@@ -963,7 +964,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="193" height="101" x="19" y="411" style="//@styles.0/@styles.1">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="193" height="101" x="21" y="273" style="//@styles.0/@styles.1">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
           <points x="193"/>
           <points x="193" y="101"/>
@@ -1000,26 +1001,26 @@
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature ElectricalComponents::Actuator.act_in"/>
         <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="right"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="side" value="right"/>
         <properties key="layout_side" value="right"/>
         <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="57" height="31" x="136" y="70"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.8" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.11" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="42" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.12" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.6" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="57" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.8" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.11" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="-8" y="26"/>
@@ -1080,10 +1081,10 @@
     </children>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
       <properties key="independentObject" value="subcomponent CarSystem::Car.impl.wheel_sensor"/>
+      <properties key="is_layed_out" value="true"/>
       <properties key="is_lt_node" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <properties key="is_layed_out" value="true"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="172" height="108" x="650" y="97" style="//@styles.0/@styles.1">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" width="172" height="108" x="650" y="105" style="//@styles.0/@styles.1">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false" style="//@styles.1">
           <points x="172"/>
           <points x="172" y="108"/>
@@ -1119,27 +1120,27 @@
       </anchors>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature BrakeHardware::Wheel_Rotation_Sensor.wheel_sensor"/>
+        <properties key="is_layed_out" value="true"/>
+        <properties key="side" value="left"/>
         <properties key="is_ghost" value="false"/>
         <properties key="is_coloring_container" value="true"/>
         <properties key="is_lt_node" value="true"/>
-        <properties key="is_layed_out" value="true"/>
-        <properties key="side" value="left"/>
         <properties key="layout_side" value="left"/>
         <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="105" height="31" y="57"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.6" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.9" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="innerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="15" y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.2 //@connections.10" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" outgoingConnections="//@connections.2 //@connections.4" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="outerConnector"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location y="26"/>
         </anchors>
-        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.6" useAnchorLocationAsConnectionEndpoint="true">
+        <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.9" useAnchorLocationAsConnectionEndpoint="true">
           <properties key="name" value="flowSpecification"/>
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
           <location x="65" y="26"/>
@@ -1275,6 +1276,54 @@
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
     </connectionDecorators>
   </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.6/@children.0/@anchors.2" end="//@children.0/@children.2/@children.3/@anchors.2">
+    <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
+    <properties key="is_ghost" value="false"/>
+    <properties key="is_lt_node" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5"/>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="label"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc5"/>
+    </connectionDecorators>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="connection_pattern"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.3/@children.1/@anchors.2" end="//@children.0/@children.2/@children.4/@anchors.2">
+    <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
+    <properties key="is_ghost" value="false"/>
+    <properties key="is_lt_node" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5"/>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="label"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc6"/>
+    </connectionDecorators>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="connection_pattern"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.2/@children.2/@anchors.2" end="//@children.0/@children.5/@children.0/@anchors.2">
+    <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
+    <properties key="is_ghost" value="false"/>
+    <properties key="is_lt_node" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5"/>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="label"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc7"/>
+    </connectionDecorators>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="name" value="connection_pattern"/>
+      <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
+    </connectionDecorators>
+  </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.0/@children.0/@anchors.1" end="//@children.0/@children.0/@children.0/@anchors.3">
     <properties key="independentObject" value="flow_specification UIComponenet::UI_Input.ui_flowsource"/>
     <properties key="is_lt_node" value="true"/>
@@ -1320,7 +1369,29 @@
     </connectionDecorators>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.6/@children.0/@anchors.1" end="//@children.0/@children.6/@children.0/@anchors.3">
-    <properties key="independentObject" value="flow_specification BrakeHardware::Wheel_Rotation_Sensor.brake_flowsource"/>
+    <properties key="independentObject" value="flow_specification BrakeHardware::Wheel_Rotation_Sensor.wheel_flowsource"/>
+    <properties key="is_lt_node" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.6"/>
+    <connectionDecorators visible="true" locationRelative="true">
+      <graphicsAlgorithm xsi:type="al:Polygon" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5">
+        <points x="-6" y="4"/>
+        <points x="2"/>
+        <points x="-6" y="-4"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5">
+        <points y="8"/>
+        <points y="-8"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <properties key="independentObject" value="flow_specification BrakeHardware::Wheel_Rotation_Sensor.wheel_flowsource"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="wheel_flowsource"/>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.3/@children.1/@anchors.1" end="//@children.0/@children.3/@children.1/@anchors.3">
+    <properties key="independentObject" value="flow_specification BrakeHardware::Brake_Pedal.brake_flowsource"/>
     <properties key="is_lt_node" value="true"/>
     <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.6"/>
     <connectionDecorators visible="true" locationRelative="true">
@@ -1337,52 +1408,30 @@
       </graphicsAlgorithm>
     </connectionDecorators>
     <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="independentObject" value="flow_specification BrakeHardware::Wheel_Rotation_Sensor.brake_flowsource"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="brake_flowsource"/>
-    </connectionDecorators>
-  </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.3/@children.0/@anchors.1" end="//@children.0/@children.3/@children.0/@anchors.3">
-    <properties key="independentObject" value="flow_specification BrakeHardware::Brake_Pedal.brake_flowsource"/>
-    <properties key="is_lt_node" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.6"/>
-    <connectionDecorators visible="true" locationRelative="true">
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.5">
-        <points x="6" y="4"/>
-        <points x="-2"/>
-        <points x="6" y="-4"/>
-      </graphicsAlgorithm>
-    </connectionDecorators>
-    <connectionDecorators visible="true" locationRelative="true" location="1.0">
-      <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5">
-        <points y="8"/>
-        <points y="-8"/>
-      </graphicsAlgorithm>
-    </connectionDecorators>
-    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
       <properties key="independentObject" value="flow_specification BrakeHardware::Brake_Pedal.brake_flowsource"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="brake_flowsource"/>
     </connectionDecorators>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.5/@children.0/@anchors.1" end="//@children.0/@children.5/@children.0/@anchors.3">
-    <properties key="independentObject" value="flow_specification ElectricalComponents::Actuator.brake_flowsource"/>
+    <properties key="independentObject" value="flow_specification ElectricalComponents::Actuator.act_flowsink"/>
     <properties key="is_lt_node" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.6"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.6"/>
     <connectionDecorators visible="true" locationRelative="true">
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.5">
+      <graphicsAlgorithm xsi:type="al:Polygon" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5">
         <points x="6" y="4"/>
         <points x="-2"/>
         <points x="6" y="-4"/>
       </graphicsAlgorithm>
     </connectionDecorators>
     <connectionDecorators visible="true" locationRelative="true" location="1.0">
-      <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5">
         <points y="8"/>
         <points y="-8"/>
       </graphicsAlgorithm>
     </connectionDecorators>
     <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="independentObject" value="flow_specification ElectricalComponents::Actuator.brake_flowsource"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="brake_flowsource"/>
+      <properties key="independentObject" value="flow_specification ElectricalComponents::Actuator.act_flowsink"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="act_flowsink"/>
     </connectionDecorators>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.2/@children.0/@anchors.1" end="//@children.0/@children.2/@children.1/@anchors.1">
@@ -1401,55 +1450,44 @@
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="flow_UI_UD"/>
     </connectionDecorators>
   </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.6/@children.0/@anchors.2" end="//@children.0/@children.2/@children.3/@anchors.2">
-    <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.2/@children.4/@anchors.1" end="//@children.0/@children.2/@children.2/@anchors.1">
+    <properties key="independentObject" value="flow_specification SoftwareSystems::cruiseControl.flow_bp_act"/>
     <properties key="is_lt_node" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5"/>
-    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="label"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc5"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.6"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.5">
+        <points x="-6" y="4"/>
+        <points x="2"/>
+        <points x="-6" y="-4"/>
+      </graphicsAlgorithm>
     </connectionDecorators>
     <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="connection_pattern"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc5"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
+      <properties key="independentObject" value="flow_specification SoftwareSystems::cruiseControl.flow_bp_act"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="flow_bp_act"/>
     </connectionDecorators>
+    <bendpoints x="355" y="328"/>
   </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.3/@children.1/@anchors.2" end="//@children.0/@children.2/@children.4/@anchors.2">
-    <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.2/@children.3/@anchors.1" end="//@children.0/@children.2/@children.2/@anchors.1">
+    <properties key="independentObject" value="flow_specification SoftwareSystems::cruiseControl.flow_wr_act"/>
     <properties key="is_lt_node" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5"/>
-    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="label"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc6"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.6"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" foreground="//@colors.4" lineStyle="UNSPECIFIED" style="//@styles.5">
+        <points x="-6" y="4"/>
+        <points x="2"/>
+        <points x="-6" y="-4"/>
+      </graphicsAlgorithm>
     </connectionDecorators>
     <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="connection_pattern"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc6"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
-    </connectionDecorators>
-  </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.2/@children.2/@anchors.2" end="//@children.0/@children.5/@children.0/@anchors.2">
-    <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
-    <properties key="is_lt_node" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.5"/>
-    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="label"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="-6" y="-20" style="//@styles.4" font="//@fonts.1" value="cc7"/>
-    </connectionDecorators>
-    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
-      <properties key="name" value="connection_pattern"/>
-      <properties key="independentObject" value="connection CarSystem::Car.impl.cc7"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="10" style="//@styles.4" font="//@fonts.1" value=""/>
+      <properties key="independentObject" value="flow_specification SoftwareSystems::cruiseControl.flow_wr_act"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.4" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.4" font="//@fonts.1" value="flow_wr_act"/>
     </connectionDecorators>
   </connections>
   <colors red="227" green="238" blue="249"/>
   <colors red="255" green="255" blue="255"/>
   <colors/>
   <colors red="192" green="192" blue="192"/>
+  <colors green="127"/>
   <fonts name="Arial" size="5" bold="true"/>
   <fonts name="Arial" size="8"/>
   <fonts name="Arial" size="13" bold="true"/>

@@ -75,7 +75,7 @@
     <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
     <index>0</index>
   </componentInstance>
-  <componentInstance name="brake_sensor" category="device">
+  <componentInstance name="wheel_sensor" category="device">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../Plugin_Resources/SEI.aadl#SEI.NetWeight"/>
       <ownedValue>
@@ -85,10 +85,10 @@
       </ownedValue>
       <propertyAssociation href="../BrakeHardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
-    <featureInstance name="brake_sensor" direction="out">
+    <featureInstance name="wheel_sensor" direction="out">
       <feature xsi:type="aadl2:DataPort" href="../BrakeHardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
     </featureInstance>
-    <flowSpecification name="brake_flowsource" destination="//@componentInstance.2/@featureInstance.0">
+    <flowSpecification name="wheel_flowsource" destination="//@componentInstance.2/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
         <ownedValue>
@@ -121,7 +121,10 @@
     <featureInstance name="brake_pedal">
       <feature xsi:type="aadl2:DataPort" href="../BrakeHardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
     </featureInstance>
-    <flowSpecification name="brake_flowsource" source="//@componentInstance.3/@featureInstance.0">
+    <featureInstance name="brake_pedal_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../BrakeHardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.1"/>
+    </featureInstance>
+    <flowSpecification name="brake_flowsource" destination="//@componentInstance.3/@featureInstance.1">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
         <ownedValue>
@@ -141,6 +144,39 @@
     <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.3"/>
     <index>0</index>
   </componentInstance>
+  <componentInstance name="actuator" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.NetWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="2.0">
+          <unit href="../../Plugin_Resources/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../ElectricalComponents.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="act_in">
+      <feature xsi:type="aadl2:DataPort" href="../ElectricalComponents.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <flowSpecification name="act_flowsink" source="//@componentInstance.4/@featureInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="15">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="15">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../ElectricalComponents.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../ElectricalComponents.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.4"/>
+    <index>0</index>
+  </componentInstance>
   <componentInstance name="cc" category="system">
     <featureInstance name="ui_in">
       <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
@@ -148,7 +184,16 @@
     <featureInstance name="ud_out" direction="out">
       <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
     </featureInstance>
-    <flowSpecification name="flow_UI_UD" source="//@componentInstance.4/@featureInstance.0" destination="//@componentInstance.4/@featureInstance.1">
+    <featureInstance name="ta_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.2"/>
+    </featureInstance>
+    <featureInstance name="wrs_in">
+      <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.3"/>
+    </featureInstance>
+    <featureInstance name="bp_in">
+      <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.4"/>
+    </featureInstance>
+    <flowSpecification name="flow_UI_UD" source="//@componentInstance.5/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.1">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
         <ownedValue>
@@ -156,7 +201,7 @@
             <minimum xsi:type="aadl2:IntegerLiteral" value="5">
               <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
             </minimum>
-            <maximum xsi:type="aadl2:IntegerLiteral" value="6">
+            <maximum xsi:type="aadl2:IntegerLiteral" value="5">
               <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
             </maximum>
           </ownedValue>
@@ -165,20 +210,54 @@
       </ownedPropertyAssociation>
       <flowSpecification href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
     </flowSpecification>
+    <flowSpecification name="flow_bp_act" source="//@componentInstance.5/@featureInstance.4" destination="//@componentInstance.5/@featureInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="15">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="15">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.1"/>
+    </flowSpecification>
+    <flowSpecification name="flow_wr_act" source="//@componentInstance.5/@featureInstance.3" destination="//@componentInstance.5/@featureInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="30">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="30">
+              <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.2/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.2"/>
+    </flowSpecification>
     <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.0"/>
     <index>0</index>
   </componentInstance>
   <componentInstance name="albs" category="system">
-    <featureInstance name="albs_in">
+    <featureInstance name="wrs_in">
       <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
     </featureInstance>
-    <featureInstance name="albs_out" direction="out">
+    <featureInstance name="bp_out" direction="out">
       <feature xsi:type="aadl2:DataPort" href="../SoftwareSystems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.1"/>
     </featureInstance>
     <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.1"/>
     <index>0</index>
   </componentInstance>
-  <endToEndFlow name="ete" flowElement="//@componentInstance.0/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.4/@flowSpecification.0 //@connectionInstance.2 //@componentInstance.1/@flowSpecification.0">
+  <endToEndFlow name="ete" flowElement="//@componentInstance.0/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.5/@flowSpecification.0 //@connectionInstance.4 //@componentInstance.1/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -195,23 +274,72 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.0"/>
   </endToEndFlow>
-  <connectionInstance name="ui.ui -> cc.ui_in" complete="true" kind="portConnection" destination="//@componentInstance.4/@featureInstance.0" source="//@componentInstance.0/@featureInstance.0">
-    <connectionReference context="/" source="//@componentInstance.0/@featureInstance.0" destination="//@componentInstance.4/@featureInstance.0">
+  <endToEndFlow name="BP_PATH_ACT" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.3 //@componentInstance.5/@flowSpecification.1 //@connectionInstance.5 //@componentInstance.4/@flowSpecification.0">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:IntegerLiteral" value="6">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" value="50">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.1/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <endToEndFlow href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.1"/>
+  </endToEndFlow>
+  <endToEndFlow name="WRS_PATH_ACT" flowElement="//@componentInstance.2/@flowSpecification.0 //@connectionInstance.2 //@componentInstance.5/@flowSpecification.2 //@connectionInstance.5 //@componentInstance.4/@flowSpecification.0">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../Plugin_Resources/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:IntegerLiteral" value="40">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" value="40">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <endToEndFlow href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.2"/>
+  </endToEndFlow>
+  <connectionInstance name="ui.ui -> cc.ui_in" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.0/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.0/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="brake_sensor.brake_sensor -> albs.albs_in" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.2/@featureInstance.0">
-    <connectionReference context="/" source="//@componentInstance.2/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.0">
+  <connectionInstance name="wheel_sensor.wheel_sensor -> albs.wrs_in" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.2/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.2/@featureInstance.0" destination="//@componentInstance.6/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="cc.ud_out -> ud.ud" complete="true" kind="portConnection" destination="//@componentInstance.1/@featureInstance.0" source="//@componentInstance.4/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.1" destination="//@componentInstance.1/@featureInstance.0">
+  <connectionInstance name="wheel_sensor.wheel_sensor -> cc.wrs_in" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.3" source="//@componentInstance.2/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.2/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.3">
+      <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="brake_pedal.brake_pedal_out -> cc.bp_in" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.4" source="//@componentInstance.3/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.1" destination="//@componentInstance.5/@featureInstance.4">
+      <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="cc.ud_out -> ud.ud" complete="true" kind="portConnection" destination="//@componentInstance.1/@featureInstance.0" source="//@componentInstance.5/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.1/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="albs.albs_out -> brake_pedal.brake_pedal" complete="true" kind="portConnection" destination="//@componentInstance.3/@featureInstance.0" source="//@componentInstance.5/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.3/@featureInstance.0">
+  <connectionInstance name="cc.ta_out -> actuator.act_in" complete="true" kind="portConnection" destination="//@componentInstance.4/@featureInstance.0" source="//@componentInstance.5/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.2" destination="//@componentInstance.4/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="albs.bp_out -> brake_pedal.brake_pedal" complete="true" kind="portConnection" destination="//@componentInstance.3/@featureInstance.0" source="//@componentInstance.6/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.6/@featureInstance.1" destination="//@componentInstance.3/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../CarSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
     </connectionReference>
   </connectionInstance>
